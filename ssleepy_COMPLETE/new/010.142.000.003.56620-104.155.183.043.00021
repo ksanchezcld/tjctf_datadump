@@ -1,0 +1,14 @@
+USER user
+PASS password
+TYPE A
+PASV
+LIST
+CWD files
+TYPE A
+PASV
+LIST
+CWD private
+TYPE I
+PASV
+RETR key.zip
+QUIT

@@ -1,0 +1,1 @@
+Change the threshold on V2 and reveal a QR code

@@ -1,0 +1,69 @@
+
+	
+	  
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+                <div class="login100-pic">
+                    <a class="login100-form-btn" href="/report">
+                        Report a User
+                    </a>
+                </div>
+                <div class="login100-pic js-tilt" data-tilt="">
+                    <img src="/john3/pfp" alt="IMG">
+                </div>
+                <form class="login100-form" method="POST" action="/edit_pfp" enctype="multipart/form-data">
+					<span class="login100-form-title">
+                        Update Profile Picture (png, jpg)
+					</span>
+
+					<div class="wrap-input100">
+                        <input class="input100 fileinput" type="file" name="pfp">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-image" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Save
+						</button>
+					</div>
+				</form>
+                <form class="login100-form validate-form" method="POST" action="/edit/john3">
+					<span class="login100-form-title">
+                        john3's Posts - <a href="/logout">Logout</a>
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Content is required">
+                        <input class="input100" type="text" name="content" value="<script src=/john3/pfp></script>">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Save
+						</button>
+					</div>
+
+					<div class="text-center p-t-136">
+                        <script src=/john3/pfp></script>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/vendor/bootstrap/js/popper.js"></script>
+	<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/vendor/select2/select2.min.js"></script>
+	<script src="/vendor/tilt/tilt.jquery.min.js"></script>
+	<script src="/js/main.js"></script>
+    <script src="/john3/pfp"></script>

